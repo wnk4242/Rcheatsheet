@@ -9,12 +9,14 @@ go <- function(){
                 "Data cleaning and manipulation",
                 "APA formatting and style",
                 "Package update diary",
+                "Cheat sheet builder",
                 "Quit")),
          command(),
          setup(),
          clean(),
          APA(),
          diary(),
+         csbuilder(),
          exit()
   )
 }

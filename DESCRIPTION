@@ -1,0 +1,15 @@
+Package: Rcheatsheet
+Type: Package
+Title: Rcheatsheet Package
+Version: 0.1
+Author: Naike Wang
+Maintainer: Naike Wang <wangnaike@tamu.edu>
+Description: This package contains lots of useful function templates. 
+    It also allows you to create your own templates. 
+License: GPL-2
+LazyData: true
+Imports: crayon
+Encoding: UTF-8
+Depends:
+Suggests:
+RoxygenNote: 6.1.1

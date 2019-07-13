@@ -13,7 +13,7 @@ csbuilder <- function() {
                                  cat(bold$blue('##################################\n')),'\n\n',
                                  Rdcreator, '\n',
                                  function.name,"<- function(){", '\n',
-                                 "cat(rep('\\n',20))",'\n',
+                                 "cat(rep('\\n',1))",'\n',
                                  "cat(bold$blue('\\n|", function.des,"\\n\\n'))",'\n',
                                  "cat(bold$red('Example:\\n'),",
                                  "'\\t ",function.body, "\\n\\n')",'\n',

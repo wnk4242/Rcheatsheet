@@ -1,4 +1,5 @@
 #' automatic cheat sheet template
+#' @export
 csbuilder <- function() {
   cat("\014")
   cat(bold$red('\nWelcome to Cheat Sheet Builder!\n'))

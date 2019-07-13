@@ -2,7 +2,7 @@
 #' main menu
 #' @export
 go <- function(){
-  cat(rep("\n", 20))
+  cat("\014")
   cat(bold$red('\n| Main menu\n'))
   switch(menu(c("View the complete list of command",
                 "Setting up environment",
@@ -24,7 +24,7 @@ go <- function(){
 #' set up page
 #' @export
 setup <- function(){
-  cat(rep("\n", 20))
+  cat("\014")
   cat(bold$red('\n| Setting up programming environment\n'))
   switch(menu(c("install a package",
                 "load in a library",
@@ -41,7 +41,7 @@ setup <- function(){
 #' clean and manipulation page
 #' @export
 clean <- function(){
-  cat(rep("\n", 20))
+  cat("\014")
   cat(bold$red('\n| Data cleaning and manipulation\n'))
   switch(menu(c("name objects",
                 "create a data frame",
@@ -60,7 +60,7 @@ clean <- function(){
 #' APA page
 #' @export
 APA <- function(){
-  cat(rep("\n", 20))
+  cat("\014")
   cat(bold$red('\n| APA formatting and style\n'))
   switch(menu(c("cite a journal article in APA style",
                 "go back to the main menu",
@@ -73,13 +73,14 @@ APA <- function(){
 #' Diary page
 #' @export
 diary <- function(){
-  cat(rep("\n", 20))
+  cat("\014")
   cat(bold$red('\n| Package Update Diary\n'))
   switch(menu(c("July 7th, 2019",
                 "July 8th, 2019",
                 "July 9th, 2019",
                 "July 10th, 2019",
                 "July 11th, 2019",
+                "July 13th, 2019",
                 "go back to the main menu",
                 "quit")),
          July072019(),
@@ -87,6 +88,7 @@ diary <- function(){
          July092019(),
          July102019(),
          July112019(),
+         July132019(),
          go(),
          exit())
 }

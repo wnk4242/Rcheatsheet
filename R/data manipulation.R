@@ -2,7 +2,7 @@
 #' data.frame function template
 #' @export
 dataframe <- function(){
-  cat(rep("\n", 20))
+  cat("\014")
   cat(bold$blue('\n| Buid a data frame\n\n'))
   cat(bold$red('Example:\n'),
       '\tdata.frame(
@@ -17,7 +17,7 @@ dataframe <- function(){
 #' tbl_df function template
 #' @export
 tbl <- function(){
-  cat(rep("\n", 20))
+  cat("\014")
   cat(bold$blue('\n| Convert a data frame to tibble\n\n'))
   cat(bold$red('Example:\n'),
       "\ttbl_df(dataframe_name)")
@@ -28,7 +28,7 @@ tbl <- function(){
 #' names and setNames function template
 #' @export
 naming <- function(){
-  cat(rep("\n", 20))
+  cat("\014")
   cat(bold$blue('\n| Name objects\n\n'))
   cat(bold$red('Example:\n'),
       '\tx <- c(a = 1, b = 2, c = 3)\n \n')

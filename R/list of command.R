@@ -2,7 +2,7 @@
 #' A list of R commands as the table of content
 #' @export
 command<- function(){
-  cat(rep("\n", 20))
+  cat("\014")
   cat(bold$inverse("\nList of Command\n"))
   cat('\n')
   cat(bold$underline('Setting up environment: setup()'), fill = 1)
@@ -26,14 +26,6 @@ command<- function(){
   cat('APAjournal()...template for citing a journal article in APA style', fill = 1)
   cat('\n')
   cat(bold$underline('Package Update Diary: diary()'), fill = 1)
-  cat('\n \t')
-  cat('July072019()')
-  cat('\n \t')
-  cat('July082019()')
-  cat('\n \t')
-  cat('July092019()')
-  cat('\n \t')
-  cat('July102019()')
   cat('\n\n')
   ask()
 }

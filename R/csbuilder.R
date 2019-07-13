@@ -19,12 +19,11 @@ csbuilder <- function() {
                                  "'\\t ",function.body, "\\n\\n')",'\n',
                                  "# INSERT EXTRA EXAMPLE CODE IF APPLICABLE #",'\n',
                                  "cat(rep('\\n', 3))",'\n',
-                                 "ask_csbuilder()",'\n',
                                  "}",
                                  sep = ""))
     cat(bold$blue('\n\n##################################\n'))
     cat(bold$blue('Save the above main code as a new .R file or save it into an existing .R file\n'))
-    cat(bold$blue('and run the following command IN CONSOLE to generate .Rd file for this function:\n'))
+    cat(bold$blue('and run the following command in the CONSOLE to generate .Rd file for this function:\n'))
     cat(bold$blue('devtools::document()'))
     cat(rep("\n", 5))
     ask_csbuilder()

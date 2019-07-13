@@ -9,7 +9,7 @@ csbuilder <- function() {
   Rdcreator <- paste("#'", function.des)
     function.body <-  readline(prompt="Write function format: ")
     cat(rep("\n", 10))
-    template <- writeLines(paste(cat(bold$blue('Copy and Paste the following main code to an R script file:\n')),
+    template <- writeLines(paste(cat(bold$blue('Copy and paste the following main code to an R script file:\n')),
                                  cat(bold$blue('##################################\n')),'\n\n',
                                  Rdcreator, '\n',
                                  function.name,"<- function(){", '\n',
@@ -22,10 +22,14 @@ csbuilder <- function() {
                                  "}",
                                  sep = ""))
     cat(bold$blue('\n\n##################################\n'))
-    cat(bold$blue('Save the above main code as a new .R file or save it into an existing .R file\n'))
-    cat(bold$blue('and run the following command in the CONSOLE to generate .Rd file for this function:\n'))
-    cat(bold$blue('devtools::document()'))
+    cat(bold$blue('Save the above main code as functions.R (or whatever name you name it)\n'))
+    cat(bold$blue('I would suggest you save all the cheat sheet code in a single .R file\n'))
+    cat(bold$blue('To use your cheat sheets, run the following command in the console:\n'))
+    cat(bold$green('if(!exists("foo", mode="function")) source("~/functions.R")\n'))
+    cat(bold$blue('Note: "~" is your working directory\n'))
     cat(rep("\n", 5))
     ask_csbuilder()
 }
 
+#If you are building a package, run the following command in the CONSOLE to generate .Rd file:
+#devtools::document()

@@ -1,7 +1,10 @@
 ######gadgets##########
 #' clear page and start a new prompt
 #' @export
-exit <- function() cat('See ya!',rep("\n", 20)) #this one is used as an exit button
+exit <- function() {
+  cat("\014")
+  cat('See ya!')
+  }   #this one is used as an exit button
 
 #' ask to go to main menu
 ask <- function(){                   #this one is used to ask if the user need more help

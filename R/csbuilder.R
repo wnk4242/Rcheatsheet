@@ -1,5 +1,8 @@
 #' automatic cheat sheet template
 csbuilder <- function() {
+  cat(rep("\n", 20))
+  cat(bold$red('\nWelcome to Cheat Sheet Builder\n'))
+  cat(rep("\n", 5))
   function.name <- readline(prompt="Name your function: ")
   function.des <- readline(prompt="Describe function in a sentence: ")
   Rdcreator <- paste("#'", function.des)

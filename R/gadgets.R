@@ -50,3 +50,11 @@ ask_diary <- function(){
          diary(),
          exit())
 }
+
+ask_csbuilder <- function(){
+  cat(bold$cyan('Need more help?'))
+  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to cheat sheet builder!", "I'm good.")),
+         go(),
+         csbuilder(),
+         exit())
+}

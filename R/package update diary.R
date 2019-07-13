@@ -1,5 +1,6 @@
 ######Package code Update Diary#######
 #' 07072019
+#' @export
 July072019 <- function(){
   cat(rep("\n", 20))
   cat(bold$blue('\nJuly 7th, 2019'))
@@ -9,6 +10,7 @@ July072019 <- function(){
 }
 
 #' 07082019
+#' @export
 July082019 <- function(){
   cat(rep("\n", 20))
   cat(bold$blue('\nJuly 8th, 2019'))
@@ -18,6 +20,7 @@ July082019 <- function(){
 }
 
 #' 07092019
+#' @export
 July092019 <- function(){
   cat(rep("\n", 20))
   cat(bold$blue('\nJuly 9th, 2019'))
@@ -27,6 +30,7 @@ July092019 <- function(){
 }
 
 #' 07102019
+#' @export
 July102019 <- function(){
   cat(rep("\n", 20))
   cat(bold$blue('\nJuly 9th, 2019'))
@@ -36,6 +40,7 @@ July102019 <- function(){
 }
 
 #' 07112019
+#' @export
 July112019 <- function(){
   cat(rep("\n", 20))
   cat(bold$blue('\nJuly 11th, 2019'))

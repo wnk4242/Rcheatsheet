@@ -1,5 +1,6 @@
 ######Menu selection#######
 #' main menu
+#' @export
 go <- function(){
   cat(rep("\n", 20))
   cat(bold$red('\n| Main menu\n'))
@@ -19,6 +20,7 @@ go <- function(){
 }
 
 #' set up page
+#' @export
 setup <- function(){
   cat(rep("\n", 20))
   cat(bold$red('\n| Setting up programming environment\n'))
@@ -35,6 +37,7 @@ setup <- function(){
 }
 
 #' clean and manipulation page
+#' @export
 clean <- function(){
   cat(rep("\n", 20))
   cat(bold$red('\n| Data cleaning and manipulation\n'))
@@ -53,6 +56,7 @@ clean <- function(){
 
 
 #' APA page
+#' @export
 APA <- function(){
   cat(rep("\n", 20))
   cat(bold$red('\n| APA formatting and style\n'))
@@ -65,6 +69,7 @@ APA <- function(){
 }
 
 #' Diary page
+#' @export
 diary <- function(){
   cat(rep("\n", 20))
   cat(bold$red('\n| Package Update Diary\n'))
@@ -80,18 +85,6 @@ diary <- function(){
          July092019(),
          July102019(),
          July112019(),
-         go(),
-         exit())
-}
-
-#' csbuilder page
-builder <- function(){
-  cat(rep("\n", 20))
-  cat(bold$red('\n| Cheat sheet builder\n'))
-  switch(menu(c("Initiate building",
-                "go back to the main menu",
-                "quit")),
-         csbuilder(),
          go(),
          exit())
 }

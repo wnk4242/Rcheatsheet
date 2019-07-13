@@ -1,5 +1,6 @@
 ######Package code Data cleaning and manipulatioin#######
 #' data.frame function template
+#' @export
 dataframe <- function(){
   cat(rep("\n", 20))
   cat(bold$blue('\n| Buid a data frame\n\n'))
@@ -14,6 +15,7 @@ dataframe <- function(){
 }
 
 #' tbl_df function template
+#' @export
 tbl <- function(){
   cat(rep("\n", 20))
   cat(bold$blue('\n| Convert a data frame to tibble\n\n'))
@@ -24,6 +26,7 @@ tbl <- function(){
 }
 
 #' names and setNames function template
+#' @export
 naming <- function(){
   cat(rep("\n", 20))
   cat(bold$blue('\n| Name objects\n\n'))

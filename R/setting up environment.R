@@ -1,5 +1,6 @@
 ######Package code Setting up environment#######
 #' read function template
+#' @export
 read<- function(){
   cat(rep("\n", 20))
   cat(bold$blue('\n| Read in a dataset\n\n'))
@@ -16,6 +17,7 @@ read<- function(){
 }
 
 #' install.package function template
+#' @export
 install <- function(){
   cat(rep("\n", 20))
   cat(bold$blue('\n| Install a package\n\n'))
@@ -30,6 +32,7 @@ install <- function(){
 }
 
 #' library function template
+#' @export
 lib <- function(){
   cat(rep("\n", 20))
   cat(bold$blue('\n| Load in a library\n\n'))

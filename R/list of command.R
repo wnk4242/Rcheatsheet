@@ -1,5 +1,6 @@
 ######List of Command######
 #' A list of R commands as the table of content
+#' @export
 command<- function(){
   cat(rep("\n", 20))
   cat(bold$inverse("\nList of Command\n"))

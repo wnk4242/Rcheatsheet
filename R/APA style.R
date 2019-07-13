@@ -1,5 +1,6 @@
 ######Package code APA formatting and style#######
 #' Citing a journal article in APA style template
+#' @export
 APAjournal <- function(){
   cat(rep("\n", 20))
   cat(bold$blue('\n| Cite a journal article in APA style\n'))

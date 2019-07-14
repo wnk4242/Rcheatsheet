@@ -37,11 +37,11 @@ ask_setup <- function(){
 
 #' ask to go to clean and manipulation page
 #' @export
-ask_clean <- function(){
+ask_wrangle <- function(){
   cat(bold$cyan('Need more help?'))
   switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous page!", "I'm good.")),
          go(),
-         clean(),
+         wrangle(),
          exit())
 }
 

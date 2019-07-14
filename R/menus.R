@@ -7,15 +7,15 @@ go <- function(){
   cat(bold$red('\n| Main menu\n'))
   switch(menu(c("View the complete list of command\n",
                 "Setting up the environment\n",
-                "Data cleaning and manipulation\n",
-                "Life saving packages\n",
+                "Data wrangling\n",
+                "Lifesaving packages\n",
                 "APA formatting and style\n",
                 "Cheat sheet builder\n",
                 "Package update diary\n",
                 "Quit")),
          command(),
          setup(),
-         clean(),
+         wrangle(),
          lifesaver(),
          APA(),
          csbuilder(),
@@ -45,7 +45,7 @@ setup <- function(){
 #' @export
 lifesaver<- function(){
   cat("\014")
-  cat(bold$red('\n| Life saving package\n'))
+  cat(bold$red('\n| Lifesaving packages\n'))
   switch(menu(c("dplyr grammar",
                 "go back to the main menu",
                 "quit")),
@@ -69,19 +69,17 @@ DplyR <- function(){
          exit())
 }
 
-#' clean and manipulation page
+#' wrangling page
 #' @export
-clean <- function(){
+wrangle <- function(){
   cat("\014")
-  cat(bold$red('\n| Data cleaning and manipulation\n'))
+  cat(bold$red('\n| Data wrangling\n'))
   switch(menu(c("name objects",
                 "create a data frame",
-                "convert a data frame to tibble",
                 "go back to the main menu",
                 "quit")),
          naming(),
          dataframe(),
-         tbl(),
          go(),
          exit())
 }

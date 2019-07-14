@@ -1,4 +1,4 @@
-######Package code Data cleaning and manipulatioin#######
+######Package code Data wrangling#######
 #' data.frame function template
 #' @export
 dataframe <- function(){
@@ -11,7 +11,7 @@ dataframe <- function(){
                     salary = c(100,200,300,400,500)
                     )')
   cat(rep("\n", 3))
-  ask_clean()
+  ask_wrangle()
 }
 
 
@@ -28,5 +28,5 @@ naming <- function(){
   cat(bold$red('Example:\n'),
       '\tx <- setNames(1:3, c("g", "h", "i"))')
   cat(rep("\n", 3))
-  ask_clean()
+  ask_wrangle()
 }

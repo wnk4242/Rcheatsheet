@@ -13,7 +13,7 @@ command<- function(){
   cat('\n \t')
   cat('read().........Read in a data set', fill = 1)
   cat('\n')
-  cat(bold$underline('Data cleaning and manipulation: clean()'), fill = 1)
+  cat(bold$underline('Data wrangling: wrangle()'), fill = 1)
   cat('\n \t')
   cat('naming().......Name objects', fill = 1)
   cat('\n \t')

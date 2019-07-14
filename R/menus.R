@@ -10,16 +10,16 @@ go <- function(){
                 "Data cleaning and manipulation\n",
                 "Life saving packages\n",
                 "APA formatting and style\n",
-                "Package update diary\n",
                 "Cheat sheet builder\n",
+                "Package update diary\n",
                 "Quit")),
          command(),
          setup(),
          clean(),
          lifesaver(),
          APA(),
-         diary(),
          csbuilder(),
+         diary(),
          exit()
   )
 }

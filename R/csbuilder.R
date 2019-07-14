@@ -31,5 +31,24 @@ csbuilder <- function() {
     ask_csbuilder()
 }
 
+#' ask if need to add more examples
+#' @export
+extraeg <- function(){      #This serves to ask if need add extra examples
+  {cat(rep("\n", 10))
+    cat(bold$red('\nAdding new examples\n\n'))
+    example <- readline(prompt="Give an example of the function format: ")
+    cat(rep("\n", 10))
+    addexample <- writeLines(paste(
+      cat(bold$blue('Copy the following code:\n')),
+      cat(bold$blue('##################################')),'\n\n',
+      "cat(bold$red('Example:\\n'),",
+      "'\\t ",example, "\\n\\n')", sep = ""))
+    cat(bold$blue('\n\n##################################\n'))
+    cat(bold$blue('Insert the above extra example code to the main code\n'))
+    cat(rep("\n", 5))
+    ask_csbuilder()
+  }
+}
+
 #If you are building a package, run the following command in the CONSOLE to generate .Rd file:
 #devtools::document()

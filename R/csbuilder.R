@@ -1,4 +1,4 @@
-#' automatic cheat sheet template
+#' automatic cheat sheet template builder
 #' @export
 csbuilder <- function() {
   cat("\014")

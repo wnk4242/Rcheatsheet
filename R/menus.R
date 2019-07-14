@@ -3,6 +3,7 @@
 #' @export
 go <- function(){
   cat("\014")
+  require(crayon)
   cat(bold$red('\n| Main menu\n'))
   switch(menu(c("View the complete list of command",
                 "Setting up environment",

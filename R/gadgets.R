@@ -44,6 +44,18 @@ ask_clean <- function(){
          exit())
 }
 
+
+
+#' ask to go to life saving package page
+#' @export
+ask_dplyr <- function(){
+  cat(bold$cyan('Need more help?'))
+  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous page!", "I'm good.")),
+         go(),
+         lifesaver(),
+         exit())
+}
+
 #' ask to go to diary page
 #' @export
 ask_diary <- function(){

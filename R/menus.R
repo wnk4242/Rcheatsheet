@@ -8,6 +8,7 @@ go <- function(){
   switch(menu(c("View the complete list of command",
                 "Setting up environment",
                 "Data cleaning and manipulation",
+                "Life saving package",
                 "APA formatting and style",
                 "Package update diary",
                 "Cheat sheet builder",
@@ -15,6 +16,7 @@ go <- function(){
          command(),
          setup(),
          clean(),
+         lifesaver(),
          APA(),
          diary(),
          csbuilder(),
@@ -39,6 +41,34 @@ setup <- function(){
          exit())
 }
 
+#' lifesaver package
+#' @export
+lifesaver<- function(){
+  cat("\014")
+  cat(bold$red('\n| Life saving package\n'))
+  switch(menu(c("dplyr grammar",
+                "go back to the main menu",
+                "quit")),
+         DplyR(),
+         go(),
+         exit())}
+
+
+#' dplyr grammar
+#' @export
+DplyR <- function(){
+  cat("\014")
+  cat(bold$red('\n| dplyr\n'))
+  switch(menu(c("convert a data frame to tibble",
+                "go back to the previous page",
+                "go back to the main menu",
+                "quit")),
+         tbl(),
+         lifesaver(),
+         go(),
+         exit())
+}
+
 #' clean and manipulation page
 #' @export
 clean <- function(){
@@ -55,8 +85,6 @@ clean <- function(){
          go(),
          exit())
 }
-
-
 
 #' APA page
 #' @export

@@ -3,7 +3,7 @@
 #' @export
 command<- function(){
   cat("\014")
-  cat(bold$inverse("\nList of Command\n"))
+  cat(bold$inverse("\nList of Cheat Sheet\n"))
   cat('\n')
   cat(bold$underline('Setting up the environment: setup()'), fill = 1)
   cat('\n \t')

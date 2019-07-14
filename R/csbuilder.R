@@ -4,10 +4,10 @@ csbuilder <- function() {
   cat("\014")
   cat(bold$red('\nWelcome to Cheat Sheet Builder!\n'))
   cat(bold$red('\nBuild a new cheat sheet\n\n'))
-  function.name <- readline(prompt="Name your function: ")
-  function.des <- readline(prompt="Describe function in a sentence: ")
+  function.name <- readline(prompt="Name the cheat sheet for a function: ")
+  function.des <- readline(prompt="Describe the usage of the function in a sentence: ")
   Rdcreator <- paste("#'", function.des)
-    function.body <-  readline(prompt="Write function format: ")
+    function.body <-  readline(prompt="Give an example of the function format: ")
     cat(rep("\n", 10))
     template <- writeLines(paste(cat(bold$blue('Copy and paste the following main code to an R script file:\n')),
                                  cat(bold$blue('##################################\n')),'\n\n',

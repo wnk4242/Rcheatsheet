@@ -70,7 +70,7 @@ ask_csbuilder <- function(){
 ask_extra <- function(){      #This serves to ask if need add extra examples
   {cat(rep("\n", 10))
     cat(bold$red('\nAdding new examples\n\n'))
-    example <- readline(prompt="Write function format: ")
+    example <- readline(prompt="Give an example of the function format: ")
     cat(rep("\n", 10))
     addexample <- writeLines(paste(
     cat(bold$blue('Copy the following code:\n')),

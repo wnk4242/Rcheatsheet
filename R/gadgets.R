@@ -52,7 +52,7 @@ ask_dplyr <- function(){
   cat(bold$cyan('Need more help?'))
   switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous page!", "I'm good.")),
          go(),
-         lifesaver(),
+         DplyR(),
          exit())
 }
 

@@ -2,10 +2,10 @@
 % Please edit documentation in R/csbuilder.R
 \name{csbuilder}
 \alias{csbuilder}
-\title{automatic cheat sheet template}
+\title{automatic cheat sheet template builder}
 \usage{
 csbuilder()
 }
 \description{
-automatic cheat sheet template
+automatic cheat sheet template builder
 }

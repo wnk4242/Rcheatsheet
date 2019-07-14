@@ -7,6 +7,7 @@ exit <- function() {
   }   #this one is used as an exit button
 
 #' ask to go to main menu
+#' @export
 ask <- function(){                   #this one is used to ask if the user need more help
   cat(bold$cyan('Need more help?'))
   switch(menu(c("Sure! Go back to main menu!", "I'm good.")),

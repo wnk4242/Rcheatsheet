@@ -5,13 +5,13 @@ go <- function(){
   cat("\014")
   require(crayon)
   cat(bold$red('\n| Main menu\n'))
-  switch(menu(c("View the complete list of command",
-                "Setting up environment",
-                "Data cleaning and manipulation",
-                "Life saving package",
-                "APA formatting and style",
-                "Package update diary",
-                "Cheat sheet builder",
+  switch(menu(c("View the complete list of command\n",
+                "Setting up the environment\n",
+                "Data cleaning and manipulation\n",
+                "Life saving packages\n",
+                "APA formatting and style\n",
+                "Package update diary\n",
+                "Cheat sheet builder\n",
                 "Quit")),
          command(),
          setup(),

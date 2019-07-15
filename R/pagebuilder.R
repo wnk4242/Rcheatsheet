@@ -9,6 +9,7 @@ pagebuilder <- function(){
   page.des <- readline(prompt="Describe the page in a few words: ")
   function.name <- readline(prompt="Name the cheat sheet(s) in this page (add () after name and seperate by comma): ") #should be the same as the one named by csbuilder
   function.des <- readline(prompt="Describe the function(s) in this page (quote individual description and seperate by comma): ") #should be the same as the one put by csbuilder
+  cat(rep("\n", 10))
   writeLines(paste(cat(bold$blue('Copy and paste the following code to menus.R\n')),
                    cat(bold$blue('##################################\n')),'\n\n',
                    "#'", page.des," page\n",

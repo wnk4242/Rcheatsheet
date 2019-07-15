@@ -11,13 +11,14 @@ gadgetbuilder <- function(){
   cat(bold$red('\nBuild a new ask_pagename gadget\n\n'))
   page.name <- readline(prompt="Name the page (do not include ()): ")
   page.des <- readline(prompt="Describe the page in a few words: ") #should be the same in the same menu
+  cat(rep("\n", 10))
   writeLines(paste(cat(bold$blue('Copy and paste the following code to gadgets.R\n')),
                    cat(bold$blue('##################################\n')),'\n\n',
                    "#' ask if go to ", page.des," page\n",
                    "#'@export\n",
                    "ask_",page.name," <- function(){", '\n\t',
                    "cat(bold$cyan('Need more help?'))",'\n\t',
-                   "switch(menu(c(",c("'Sure! Go back to main menu!'"),",\n\t",
+                   "switch(menu(c(",c("\"Sure! Go back to main menu!\""),",\n\t",
                    c("\"Sure! Go back to previous menu!\""),",\n\t",
                    c("\"I'm good.\""), ")),\n\t",
                    "go(),\n\t",

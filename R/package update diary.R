@@ -60,3 +60,13 @@ July132019 <- function(){
   cat(rep("\n", 3))
   ask_diary()
 }
+
+#' 07142019
+#' @export
+July142019 <- function(){
+  cat("\014")
+  cat(bold$blue('\nJuly 14th, 2019'))
+  cat('\nBuilt cheat sheet builders: pagebuilder() and gadgetbuilder().')
+  cat(rep("\n", 3))
+  ask_diary()
+}

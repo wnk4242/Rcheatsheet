@@ -9,8 +9,8 @@ gadgetbuilder <- function(){
   cat("\014")
   cat(bold$red('\nWelcome to Gadget Builder!\n'))
   cat(bold$red('\nBuild a new ask_pagename gadget\n\n'))
-  page.name <- readline(prompt="Name the page (do not include ()): ")
-  page.des <- readline(prompt="Describe the page in a few words: ") #should be the same in the same menu
+  page.name <- readline(prompt="the page function name (do not include (), e.g. setup): ")
+  page.des <- readline(prompt="the page title (e.g. Environment setup): ") #should be the same in the main menu
   cat(rep("\n", 10))
   writeLines(paste(cat(bold$blue('Copy and paste the following code to gadgets.R\n')),
                    cat(bold$blue('##################################\n')),'\n\n',

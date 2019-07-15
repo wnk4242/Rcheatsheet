@@ -4,11 +4,12 @@
 pagebuilder <- function(){
   cat("\014")
   cat(bold$red('\nWelcome to Page Builder!\n'))
-  cat(bold$red('\nBuild a new page\n\n'))
-  page.name <- readline(prompt="Name the page: ")
-  page.des <- readline(prompt="Describe the page in a few words: ")
-  function.name <- readline(prompt="Name the cheat sheet(s) in this page (add () after name and seperate by comma): ") #should be the same as the one named by csbuilder
-  function.des <- readline(prompt="Describe the function(s) in this page (quote individual description and seperate by comma): ") #should be the same as the one put by csbuilder
+  cat(bold$red('\nBuild a new page\n'))
+  cat(bold$red('\n(page will be shown on main menu)\n\n'))
+  page.name <- readline(prompt="Name the page function (do not include (), e.g. setup): ")
+  page.des <- readline(prompt="Entitle the page in a few words (n.+v.~ing or n.+n., e.g. Environment setup): ") #two words would be perfect: none + v-ing b/c will be listed in main menu
+  function.name <- readline(prompt="Name the cheat sheet function(s) on this page (add () after name and seperate by comma, e.g. install()): ") #should be the same as the one named by csbuilder
+  function.des <- readline(prompt="Describe the cheat sheet(s) on this page (quote each description and seperate by comma: e.g. read in dataset): ") #should be the same as the one put by csbuilder
   cat(rep("\n", 10))
   writeLines(paste(cat(bold$blue('Copy and paste the following code to menus.R\n')),
                    cat(bold$blue('##################################\n')),'\n\n',

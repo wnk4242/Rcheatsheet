@@ -2,6 +2,9 @@
 #' @export
 
 pagebuilder <- function(){
+  cat("\014")
+  cat(bold$red('\nWelcome to Page Builder!\n'))
+  cat(bold$red('\nBuild a new page\n\n'))
   page.name <- readline(prompt="Name the page: ")
   page.des <- readline(prompt="Describe the page in a few words: ")
   function.name <- readline(prompt="Name the cheat sheet(s) in this page (add () after name and seperate by comma): ") #should be the same as the one named by csbuilder

@@ -6,6 +6,9 @@
 # also note that pagename must be the same as the page name named by pagebuilder (use the same page name!)
 
 gadgetbuilder <- function(){
+  cat("\014")
+  cat(bold$red('\nWelcome to Gadget Builder!\n'))
+  cat(bold$red('\nBuild a new ask_pagename gadget\n\n'))
   page.name <- readline(prompt="Name the page (do not include ()): ")
   page.des <- readline(prompt="Describe the page in a few words: ") #should be the same in the same menu
   writeLines(paste(cat(bold$blue('Copy and paste the following code to gadgets.R\n')),

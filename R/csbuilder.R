@@ -6,7 +6,7 @@ csbuilder <- function() {
   cat(bold$red('\nBuild a new cheat sheet\n\n'))
   function.name <- readline(prompt="Name the cheat sheet of a function: ")
   function.des <- readline(prompt="Describe the function in a few words: ")
-  page.name <- readline(prompt="Name the page in which this function is in a few words (no ()): ")
+  page.name <- readline(prompt="Name the page in which this function is (no ()): ")
   Rdcreator <- paste("#'", function.des)
     function.body <-  readline(prompt="Give an example of the function format: ")
     cat(rep("\n", 10))

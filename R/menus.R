@@ -11,7 +11,7 @@ go <- function(){
                 "Lifesaving packages\n",
                 "Statistical analysis\n",
                 "APA formatting\n",
-                "Cheat sheet builder\n",
+                "Cheat sheet building\n",
                 "Package update diary\n",
                 "Quit")),
          command(),
@@ -20,7 +20,7 @@ go <- function(){
          lifesaver(),
          stanalysis(),
          APA(),
-         csbuilder(),
+         builder(),
          diary(),
          exit()
   )
@@ -136,4 +136,15 @@ diary <- function(){
          exit())
 }
 
-
+#'Cheat sheet building tools page
+#'@export
+builder <- function(){
+  cat('\014')
+  cat(bold$red('\n| Cheat sheet building tools\n'))
+  switch(menu(c("cheat sheet builder", "page builder", "gadget builder",
+                "go back to the main menu",
+                "quit")),
+         csbuilder(), pagebuilder(), gadgetbuilder(),
+         go(),
+         exit())
+}

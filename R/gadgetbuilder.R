@@ -6,7 +6,8 @@
 
 gadgetbuilder <- function(){
   pagename <- readline(prompt="Name the page: ")
-  writeLines(paste(
+  writeLines(paste(cat(bold$blue('Copy and paste the following code to gadgets.R\n')),
+                   cat(bold$blue('##################################\n')),'\n\n',
     "#'", function.des,"\n",
     "#'@export\n",
     "ask_",pagename," <- function(){", '\n\t',
@@ -19,8 +20,9 @@ gadgetbuilder <- function(){
     "exit())",
     "\n\t}",
     sep = ""))
+  cat(bold$blue('\n\n##################################\n'))
 }
 
-function.des <- c("THIS IS A TEST")
+#function.des <- c("THIS IS A TEST")
 
 

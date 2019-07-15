@@ -2,10 +2,10 @@
 % Please edit documentation in R/gadgetbuilder.R
 \name{gadgetbuilder}
 \alias{gadgetbuilder}
-\title{This function is used to build ask_pagename gadget}
+\title{This function is used to build ask_pagename}
 \usage{
 gadgetbuilder()
 }
 \description{
-This function is used to build ask_pagename gadget
+This function is used to build ask_pagename
 }

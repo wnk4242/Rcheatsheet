@@ -2,10 +2,10 @@
 % Please edit documentation in R/menus.R
 \name{lifesaver}
 \alias{lifesaver}
-\title{lifesaver package}
+\title{Lifesaving packages page}
 \usage{
 lifesaver()
 }
 \description{
-lifesaver package
+Lifesaving packages page
 }

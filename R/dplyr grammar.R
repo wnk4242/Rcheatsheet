@@ -6,5 +6,5 @@ tbl <- function(){
   cat(bold$red('Example:\n'),
       "\ttbl_df(dataframe_name)")
   cat(rep("\n", 3))
-  ask_dplyr()
+  ask_DplyR()
 }

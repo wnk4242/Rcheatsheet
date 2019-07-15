@@ -4,8 +4,9 @@ csbuilder <- function() {
   cat("\014")
   cat(bold$red('\nWelcome to Cheat Sheet Builder!\n'))
   cat(bold$red('\nBuild a new cheat sheet\n\n'))
-  function.name <- readline(prompt="Name the cheat sheet for a function: ")
-  function.des <- readline(prompt="Describe the usage of the function in a sentence: ")
+  function.name <- readline(prompt="Name the cheat sheet of a function: ")
+  function.des <- readline(prompt="Describe the function in a few words: ")
+  page.name <- readline(prompt="Name the page in which this function is in a few words (no ()): ")
   Rdcreator <- paste("#'", function.des)
     function.body <-  readline(prompt="Give an example of the function format: ")
     cat(rep("\n", 10))
@@ -13,12 +14,13 @@ csbuilder <- function() {
                                  cat(bold$blue('##################################\n')),'\n\n',
                                  Rdcreator, '\n',
                                  function.name,"<- function(){", '\n',
-                                 "cat(rep('\\n',1))",'\n',
+                                 "cat('\\014')",'\n',
                                  "cat(bold$blue('\\n|", function.des,"\\n\\n'))",'\n',
                                  "cat(bold$red('Example:\\n'),",
                                  "'\\t ",function.body, "\\n\\n')",'\n',
                                  "# INSERT EXTRA EXAMPLE CODE IF APPLICABLE #",'\n',
                                  "cat(rep('\\n', 3))",'\n',
+                                 "ask_",page.name, "()",
                                  "}",
                                  sep = ""))
     cat(bold$blue('\n\n##################################\n'))

@@ -2,10 +2,10 @@
 % Please edit documentation in R/gadgets.R
 \name{ask_csbuilder}
 \alias{ask_csbuilder}
-\title{ask to go to csbuilder}
+\title{ask if go to csbuilder}
 \usage{
 ask_csbuilder()
 }
 \description{
-ask to go to csbuilder
+ask if go to csbuilder
 }

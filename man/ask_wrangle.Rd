@@ -2,10 +2,10 @@
 % Please edit documentation in R/gadgets.R
 \name{ask_wrangle}
 \alias{ask_wrangle}
-\title{ask to go to clean and manipulation page}
+\title{ask if go to Data wrangling page}
 \usage{
 ask_wrangle()
 }
 \description{
-ask to go to clean and manipulation page
+ask if go to Data wrangling page
 }

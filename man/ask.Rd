@@ -2,10 +2,10 @@
 % Please edit documentation in R/gadgets.R
 \name{ask}
 \alias{ask}
-\title{ask to go to main menu}
+\title{ask if go to the main menu}
 \usage{
 ask()
 }
 \description{
-ask to go to main menu
+ask if go to the main menu
 }

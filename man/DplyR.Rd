@@ -2,10 +2,10 @@
 % Please edit documentation in R/menus.R
 \name{DplyR}
 \alias{DplyR}
-\title{dplyr grammar}
+\title{dplyr grammar page}
 \usage{
 DplyR()
 }
 \description{
-dplyr grammar
+dplyr grammar page
 }

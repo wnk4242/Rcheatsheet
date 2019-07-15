@@ -2,10 +2,10 @@
 % Please edit documentation in R/menus.R
 \name{wrangle}
 \alias{wrangle}
-\title{wrangling page}
+\title{Data wrangling page}
 \usage{
 wrangle()
 }
 \description{
-wrangling page
+Data wrangling page
 }

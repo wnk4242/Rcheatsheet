@@ -5,11 +5,12 @@ go <- function(){
   cat("\014")
   require(crayon)
   cat(bold$red('\n| Main menu\n'))
-  switch(menu(c("View the complete list of command\n",
-                "Setting up the environment\n",
+  switch(menu(c("List of cheat sheet\n",
+                "Environment setup\n",
                 "Data wrangling\n",
                 "Lifesaving packages\n",
-                "APA formatting and style\n",
+                "Statistical analysis\n",
+                "APA formatting\n",
                 "Cheat sheet builder\n",
                 "Package update diary\n",
                 "Quit")),
@@ -17,6 +18,7 @@ go <- function(){
          setup(),
          wrangle(),
          lifesaver(),
+         stanalysis(),
          APA(),
          csbuilder(),
          diary(),
@@ -24,11 +26,11 @@ go <- function(){
   )
 }
 
-#' set up page
+#' Environment setup page
 #' @export
 setup <- function(){
   cat("\014")
-  cat(bold$red('\n| Setting up programming environment\n'))
+  cat(bold$red('\n| Environment setup\n'))
   switch(menu(c("install a package",
                 "load in a library",
                 "read in a data set",
@@ -41,35 +43,7 @@ setup <- function(){
          exit())
 }
 
-#' lifesaver package
-#' @export
-lifesaver<- function(){
-  cat("\014")
-  cat(bold$red('\n| Lifesaving packages\n'))
-  switch(menu(c("dplyr grammar",
-                "go back to the main menu",
-                "quit")),
-         DplyR(),
-         go(),
-         exit())}
-
-
-#' dplyr grammar
-#' @export
-DplyR <- function(){
-  cat("\014")
-  cat(bold$red('\n| dplyr\n'))
-  switch(menu(c("convert a data frame to tibble",
-                "go back to the previous page",
-                "go back to the main menu",
-                "quit")),
-         tbl(),
-         lifesaver(),
-         go(),
-         exit())
-}
-
-#' wrangling page
+#' Data wrangling page
 #' @export
 wrangle <- function(){
   cat("\014")
@@ -84,11 +58,53 @@ wrangle <- function(){
          exit())
 }
 
-#' APA page
+#' Lifesaving packages page
+#' @export
+lifesaver<- function(){
+  cat("\014")
+  cat(bold$red('\n| Lifesaving packages\n'))
+  switch(menu(c("dplyr grammar",
+                "go back to the main menu",
+                "quit")),
+         DplyR(),
+         go(),
+         exit())}
+
+
+#' dplyr grammar page
+#' @export
+DplyR <- function(){
+  cat("\014")
+  cat(bold$red('\n| dplyr grammar\n'))
+  switch(menu(c("convert a data frame to tibble: tbl()",
+                "go back to the previous page",
+                "go back to the main menu",
+                "quit")),
+         tbl(),
+         lifesaver(),
+         go(),
+         exit())
+}
+
+#'Statistical analysis page
+#'@export
+stanalysis <- function(){
+  cat('\014')
+  cat(bold$red('\n| Statistical analysis\n'))
+  switch(menu(c("perform multiple regression",
+                "go back to the main menu",
+                "quit")),
+         mulreg(),
+         go(),
+         exit())
+}
+
+
+#' APA formatting page
 #' @export
 APA <- function(){
   cat("\014")
-  cat(bold$red('\n| APA formatting and style\n'))
+  cat(bold$red('\n| APA formatting\n'))
   switch(menu(c("cite a journal article in APA style",
                 "go back to the main menu",
                 "quit")),
@@ -97,11 +113,11 @@ APA <- function(){
          exit())
 }
 
-#' Diary page
+#' Package update diary page
 #' @export
 diary <- function(){
   cat("\014")
-  cat(bold$red('\n| Package Update Diary\n'))
+  cat(bold$red('\n| Package update diary\n'))
   switch(menu(c("July 7th, 2019",
                 "July 8th, 2019",
                 "July 9th, 2019",
@@ -119,3 +135,5 @@ diary <- function(){
          go(),
          exit())
 }
+
+

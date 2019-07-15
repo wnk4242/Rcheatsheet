@@ -4,7 +4,9 @@
 exit <- function() {
   cat("\014")
   cat('See ya!')
-  }   #this one is used as an exit button
+  }
+
+
 
 #' ask if go to the main menu
 #' @export

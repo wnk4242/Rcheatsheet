@@ -8,7 +8,7 @@ csbuilder <- function() {
   function.des <- readline(prompt="Describe the function in a few words: ")
   page.name <- readline(prompt="Name the page in which this function is (no ()): ")
   Rdcreator <- paste("#'", function.des)
-    function.body <-  readline(prompt="Give an example of the function format: ")
+    function.body <-  readline(prompt="Type examples of the function format (type \n\n\t in between examples): ")
     cat(rep("\n", 10))
     template <- writeLines(paste(cat(bold$blue('Copy and paste the following main code to an R script file:\n')),
                                  cat(bold$blue('##################################\n')),'\n\n',

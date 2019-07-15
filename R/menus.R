@@ -124,6 +124,7 @@ diary <- function(){
                 "July 10th, 2019",
                 "July 11th, 2019",
                 "July 13th, 2019",
+                "July 14th, 2019",
                 "go back to the main menu",
                 "quit")),
          July072019(),
@@ -132,6 +133,7 @@ diary <- function(){
          July102019(),
          July112019(),
          July132019(),
+         July142019(),
          go(),
          exit())
 }

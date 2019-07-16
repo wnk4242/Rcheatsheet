@@ -2,10 +2,10 @@
 % Please edit documentation in R/gadgets.R
 \name{ask_stanalysis}
 \alias{ask_stanalysis}
-\title{ask if go to Statistical analysis page}
+\title{ask if go to Statistical analysis menu}
 \usage{
 ask_stanalysis()
 }
 \description{
-ask if go to Statistical analysis page
+ask if go to Statistical analysis menu
 }

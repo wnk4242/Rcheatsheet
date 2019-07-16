@@ -1,28 +1,28 @@
 
-#' This function is used to build ask_pagename
+#' This function is used to build ask_menuname
 #' @export
 
 # note that you need to give function.des() a value
-# also note that pagename must be the same as the page name named by pagebuilder (use the same page name!)
+# also note that menuname must be the same as the menu name named by menubuilder (use the same menu name!)
 
 gadgetbuilder <- function(){
   cat("\014")
   cat(bold$red('\nWelcome to Gadget Builder!\n'))
-  cat(bold$red('\nBuild a new ask_pagename gadget\n\n'))
-  page.name <- readline(prompt="the page function name (do not include (), e.g. setup): ")
-  page.des <- readline(prompt="the page title (e.g. Environment setup): ") #should be the same in the main menu
+  cat(bold$red('\nBuild a new ask_menuname gadget\n\n'))
+  menu.name <- readline(prompt="the menu function name (do not include (), e.g. setup): ")
+  menu.des <- readline(prompt="the menu title (e.g. Environment setup): ") #should be the same in the main menu
   cat(rep("\n", 10))
   writeLines(paste(cat(bold$blue('Copy and paste the following code to gadgets.R\n')),
                    cat(bold$blue('##################################\n')),'\n\n',
-                   "#' ask if go to ", page.des," page\n",
+                   "#' ask if go to ", menu.des," menu\n",
                    "#'@export\n",
-                   "ask_",page.name," <- function(){", '\n\t',
+                   "ask_",menu.name," <- function(){", '\n\t',
                    "cat(bold$cyan('Need more help?'))",'\n\t',
                    "switch(menu(c(",c("\"Sure! Go back to main menu!\""),",\n\t",
                    c("\"Sure! Go back to previous menu!\""),",\n\t",
                    c("\"I'm good.\""), ")),\n\t",
                    "go(),\n\t",
-                   page.name,"(),\n\t",
+                   menu.name,"(),\n\t",
                    "exit())",
                    "\n\t}",
                    sep = ""))

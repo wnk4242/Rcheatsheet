@@ -2,10 +2,10 @@
 % Please edit documentation in R/gadgets.R
 \name{ask_setup}
 \alias{ask_setup}
-\title{ask if go to Environment setup page}
+\title{ask if go to Environment setup menu}
 \usage{
 ask_setup()
 }
 \description{
-ask if go to Environment setup page
+ask if go to Environment setup menu
 }

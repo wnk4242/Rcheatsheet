@@ -2,10 +2,10 @@
 % Please edit documentation in R/menus.R
 \name{setup}
 \alias{setup}
-\title{Environment setup page}
+\title{Environment setup menu}
 \usage{
 setup()
 }
 \description{
-Environment setup page
+Environment setup menu
 }

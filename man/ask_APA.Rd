@@ -2,10 +2,10 @@
 % Please edit documentation in R/gadgets.R
 \name{ask_APA}
 \alias{ask_APA}
-\title{ask if go to APA formatting page}
+\title{ask if go to APA formatting menu}
 \usage{
 ask_APA()
 }
 \description{
-ask if go to APA formatting page
+ask if go to APA formatting menu
 }

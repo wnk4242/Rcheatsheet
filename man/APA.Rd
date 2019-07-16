@@ -2,10 +2,10 @@
 % Please edit documentation in R/menus.R
 \name{APA}
 \alias{APA}
-\title{APA formatting page}
+\title{APA formatting menu}
 \usage{
 APA()
 }
 \description{
-APA formatting page
+APA formatting menu
 }

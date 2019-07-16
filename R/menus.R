@@ -26,7 +26,7 @@ go <- function(){
   )
 }
 
-#' Environment setup page
+#' Environment setup menu
 #' @export
 setup <- function(){
   cat("\014")
@@ -43,7 +43,7 @@ setup <- function(){
          exit())
 }
 
-#' Data wrangling page
+#' Data wrangling menu
 #' @export
 wrangle <- function(){
   cat("\014")
@@ -58,7 +58,7 @@ wrangle <- function(){
          exit())
 }
 
-#' Lifesaving packages page
+#' Lifesaving packages menu
 #' @export
 lifesaver<- function(){
   cat("\014")
@@ -71,13 +71,13 @@ lifesaver<- function(){
          exit())}
 
 
-#' dplyr grammar page
+#' dplyr grammar menu
 #' @export
 DplyR <- function(){
   cat("\014")
   cat(bold$red('\n| dplyr grammar\n'))
   switch(menu(c("convert a data frame to tibble: tbl()",
-                "go back to the previous page",
+                "go back to the previous menu",
                 "go back to the main menu",
                 "quit")),
          tbl(),
@@ -86,7 +86,7 @@ DplyR <- function(){
          exit())
 }
 
-#'Statistical analysis page
+#'Statistical analysis menu
 #'@export
 stanalysis <- function(){
   cat('\014')
@@ -100,7 +100,7 @@ stanalysis <- function(){
 }
 
 
-#' APA formatting page
+#' APA formatting menu
 #' @export
 APA <- function(){
   cat("\014")
@@ -113,7 +113,7 @@ APA <- function(){
          exit())
 }
 
-#' Package update diary page
+#' Package update diary menu
 #' @export
 diary <- function(){
   cat("\014")
@@ -138,15 +138,15 @@ diary <- function(){
          exit())
 }
 
-#'Cheat sheet building tools page
+#'Cheat sheet building tools menu
 #'@export
 builder <- function(){
   cat('\014')
   cat(bold$red('\n| Cheat sheet building tools\n'))
-  switch(menu(c("cheat sheet builder", "page builder", "gadget builder",
+  switch(menu(c("cheat sheet builder", "menu builder", "gadget builder",
                 "go back to the main menu",
                 "quit")),
-         csbuilder(), pagebuilder(), gadgetbuilder(),
+         csbuilder(), menubuilder(), gadgetbuilder(),
          go(),
          exit())
 }

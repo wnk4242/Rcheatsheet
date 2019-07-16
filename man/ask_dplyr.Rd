@@ -2,10 +2,10 @@
 % Please edit documentation in R/gadgets.R
 \name{ask_DplyR}
 \alias{ask_DplyR}
-\title{ask if go to Lifesaving packages page}
+\title{ask if go to Lifesaving packages menu}
 \usage{
 ask_DplyR()
 }
 \description{
-ask if go to Lifesaving packages page
+ask if go to Lifesaving packages menu
 }

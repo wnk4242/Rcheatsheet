@@ -2,10 +2,10 @@
 % Please edit documentation in R/menus.R
 \name{diary}
 \alias{diary}
-\title{Package update diary page}
+\title{Package update diary menu}
 \usage{
 diary()
 }
 \description{
-Package update diary page
+Package update diary menu
 }

@@ -2,10 +2,10 @@
 % Please edit documentation in R/menus.R
 \name{builder}
 \alias{builder}
-\title{Cheat sheet building tools page}
+\title{Cheat sheet building tools menu}
 \usage{
 builder()
 }
 \description{
-Cheat sheet building tools page
+Cheat sheet building tools menu
 }

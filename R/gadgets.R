@@ -19,21 +19,21 @@ ask <- function(){                   #this one is used to ask if the user need m
 
 
 
-#' ask if go to Environment setup page
+#' ask if go to Environment setup menu
 #' @export
 ask_setup <- function(){
   cat(bold$cyan('Need more help?'))
-  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous page!", "I'm good.")),
+  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous menu!", "I'm good.")),
          go(),
          setup(),
          exit())
 }
 
-#' ask if go to Data wrangling page
+#' ask if go to Data wrangling menu
 #' @export
 ask_wrangle <- function(){
   cat(bold$cyan('Need more help?'))
-  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous page!", "I'm good.")),
+  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous menu!", "I'm good.")),
          go(),
          wrangle(),
          exit())
@@ -41,18 +41,18 @@ ask_wrangle <- function(){
 
 
 
-#' ask if go to Lifesaving packages page
+#' ask if go to Lifesaving packages menu
 #' @export
 ask_DplyR <- function(){
   cat(bold$cyan('Need more help?'))
-  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous page!", "I'm good.")),
+  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous menu!", "I'm good.")),
          go(),
          DplyR(),
          exit())
 }
 
 
-#' ask if go to Statistical analysis page
+#' ask if go to Statistical analysis menu
 #'@export
 ask_stanalysis <- function(){
   cat(bold$cyan('Need more help?'))
@@ -65,11 +65,11 @@ ask_stanalysis <- function(){
 }
 
 
-#' ask if go to APA formatting page
+#' ask if go to APA formatting menu
 #' @export
 ask_APA <- function(){
   cat(bold$cyan('Need more help?'))
-  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous page!", "I'm good.")),
+  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous menu!", "I'm good.")),
          go(),
          APA(),
          exit())
@@ -86,11 +86,11 @@ ask_csbuilder <- function(){
          exit())
 }
 
-#' ask if go to Package update diary page
+#' ask if go to Package update diary menu
 #' @export
 ask_diary <- function(){
   cat(bold$cyan('Need more help?'))
-  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous page!", "I'm good.")),
+  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous menu!", "I'm good.")),
          go(),
          diary(),
          exit())

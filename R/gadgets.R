@@ -13,7 +13,7 @@ exit <- function() {
 ask <- function(){                   #this one is used to ask if the user need more help
   cat(bold$cyan('Need more help?'))
   switch(menu(c("Sure! Go back to main menu!", "I'm good.")),
-         go(),
+         mmenu(),
          exit())
 }
 
@@ -23,9 +23,9 @@ ask <- function(){                   #this one is used to ask if the user need m
 #' @export
 ask_setup <- function(){
   cat(bold$cyan('Need more help?'))
-  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous menu!", "I'm good.")),
-         go(),
+  switch(menu(c("Sure! Go back to the previous menu!", "Sure! Go back to the main menu!", "I'm good.")),
          setup(),
+         mmenu(),
          exit())
 }
 
@@ -33,9 +33,9 @@ ask_setup <- function(){
 #' @export
 ask_wrangle <- function(){
   cat(bold$cyan('Need more help?'))
-  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous menu!", "I'm good.")),
-         go(),
+  switch(menu(c("Sure! Go back to the previous menu!", "Sure! Go back to the main menu!", "I'm good.")),
          wrangle(),
+         mmenu(),
          exit())
 }
 
@@ -43,60 +43,84 @@ ask_wrangle <- function(){
 
 #' ask if go to Lifesaving packages menu
 #' @export
-ask_DplyR <- function(){
+ask_lifesaver <- function(){
   cat(bold$cyan('Need more help?'))
-  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous menu!", "I'm good.")),
-         go(),
-         DplyR(),
+  switch(menu(c("Sure! Go back to the previous menu!", "Sure! Go back to the main menu!", "I'm good.")),
+         lifesaver(),
+         mmenu(),
          exit())
 }
 
-
-#' ask if go to Statistical analysis menu
-#'@export
-ask_stanalysis <- function(){
-  cat(bold$cyan('Need more help?'))
-  switch(menu(c('Sure! Go back to main menu!',
-                "Sure! Go back to previous menu!",
-                "I'm good.")),
-         go(),
-         stanalysis(),
-         exit())
-}
-
-
-#' ask if go to APA formatting menu
+#' ask if go to dplyrpkg  menu
 #' @export
-ask_APA <- function(){
+ask_dplyrpkg <- function(){
   cat(bold$cyan('Need more help?'))
-  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous menu!", "I'm good.")),
-         go(),
-         APA(),
+  switch(menu(c("Sure! Go back to the previous menu!", "Sure! Go back to the main menu!", "I'm good.")),
+         dplyrpkg(),
+         mmenu(),
          exit())
 }
+
+
+
+
+
 
 #' ask if go to csbuilder
 #' @export
 ask_csbuilder <- function(){
   cat(bold$cyan('Do you need to add more examples?'))
-  switch(menu(c("Continue adding examples (will not clear console)","Build a new cheat sheet (warning: will clear console!)", "Go back to main menu","I'm good.")),
+  switch(menu(c("Continue adding examples (will not clear console)","Build a new cheat sheet (warning: will clear console!)", "Go back to cheat sheet builders", "Go back to main menu","I'm good.")),
          extraeg(),
          csbuilder(),
-         go(),
+         builder(),
+         mmenu(),
          exit())
 }
 
-#' ask if go to Package update diary menu
+#' ask if go to package update diary menu
 #' @export
 ask_diary <- function(){
   cat(bold$cyan('Need more help?'))
-  switch(menu(c("Sure! Go back to main menu!", "Sure! Go back to previous menu!", "I'm good.")),
-         go(),
+  switch(menu(c("Sure! Go back to the previous menu!", "Sure! Go back to the main menu!", "I'm good.")),
          diary(),
+         mmenu(),
+         exit())
+}
+
+
+#' ask if go to cheat sheet building menu
+#'@export
+ask_builder <- function(){
+  cat(bold$cyan('Need more help?'))
+  switch(menu(c("Sure! Go back to the previous menu!", "Sure! Go back to the main menu!", "I'm good.")),
+         builder(),
+         mmenu(),
          exit())
 }
 
 
 
+#' ask if go to Statistical analysis menu
+#' currently not using
+#'@export
+ask_stanalysis <- function(){
+  cat(bold$cyan('Need more help?'))
+  switch(menu(c("Sure! Go back to the previous menu!", "Sure! Go back to the main menu!", "I'm good.")),
+         stanalysis(),
+         mmenu(),
+         exit())
+}
 
+
+#' ask if go to APA formatting menu
+#' currently not using
+#' @export
+ask_apastyle <- function(){
+  cat(bold$cyan('Need more help?'))
+  switch(menu(c("Sure! Go back to the previous menu!", "Sure! Go back to the main menu!", "I'm good.")),
+         apastyle(),
+         mmenu(),
+         exit())
+}
 

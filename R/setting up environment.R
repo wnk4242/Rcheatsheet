@@ -1,7 +1,7 @@
 ######Package code Setting up environment#######
 #' read function template
 #' @export
-read<- function(){
+cs_read<- function(){
   cat("\014")
   cat(bold$blue('\n| Read in a dataset\n\n'))
   cat(bold$red('Example:\n'),
@@ -18,7 +18,7 @@ read<- function(){
 
 #' install.package function template
 #' @export
-install <- function(){
+cs_install <- function(){
   cat("\014")
   cat(bold$blue('\n| Install a package\n\n'))
   cat(bold$red('Example:\n'),
@@ -33,7 +33,7 @@ install <- function(){
 
 #' library function template
 #' @export
-lib <- function(){
+cs_library <- function(){
   cat("\014")
   cat(bold$blue('\n| Load in a library\n\n'))
   cat(bold$red('Example:\n'),

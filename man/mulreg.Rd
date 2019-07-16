@@ -2,10 +2,12 @@
 % Please edit documentation in R/stats.R
 \name{mulreg}
 \alias{mulreg}
-\title{Perform multiple regression}
+\title{Perform multiple regression
+currently not using}
 \usage{
 mulreg()
 }
 \description{
 Perform multiple regression
+currently not using
 }

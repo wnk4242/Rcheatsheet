@@ -1,7 +1,7 @@
 ######Package code Data wrangling#######
 #' data.frame function template
 #' @export
-dataframe <- function(){
+cs_data.frame <- function(){
   cat("\014")
   cat(bold$blue('\n| Buid a data frame\n\n'))
   cat(bold$red('Example:\n'),
@@ -18,7 +18,7 @@ dataframe <- function(){
 
 #' names and setNames function template
 #' @export
-naming <- function(){
+cs_name <- function(){
   cat("\014")
   cat(bold$blue('\n| Name objects\n\n'))
   cat(bold$red('Example:\n'),

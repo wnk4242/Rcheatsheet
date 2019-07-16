@@ -5,10 +5,10 @@
 # note that you need to give function.des() a value
 # also note that menuname must be the same as the menu name named by menubuilder (use the same menu name!)
 
-gadgetbuilder <- function(){
+linkbuilder <- function(){
   cat("\014")
-  cat(bold$red('\nWelcome to Gadget Builder!\n'))
-  cat(bold$red('\nBuild a new ask_menuname gadget\n\n'))
+  cat(bold$red('\nWelcome to Link Builder!\n'))
+  cat(bold$red('\nBuild a new ask_menuname link\n\n'))
   menu.name <- readline(prompt="the menu function name (do not include (), e.g. setup): ")
   menu.des <- readline(prompt="the menu title (e.g. Environment setup): ") #should be the same in the main menu
   cat(rep("\n", 10))
@@ -21,12 +21,13 @@ gadgetbuilder <- function(){
                    "switch(menu(c(",c("\"Sure! Go back to main menu!\""),",\n\t",
                    c("\"Sure! Go back to previous menu!\""),",\n\t",
                    c("\"I'm good.\""), ")),\n\t",
-                   "go(),\n\t",
                    menu.name,"(),\n\t",
                    "exit())",
                    "\n\t}",
                    sep = ""))
   cat(bold$blue('\n\n##################################\n'))
+  cat(rep("\n", 5))
+  ask_builder()
 }
 
 

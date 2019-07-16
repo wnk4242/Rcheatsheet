@@ -2,10 +2,10 @@
 % Please edit documentation in R/gadgets.R
 \name{ask_diary}
 \alias{ask_diary}
-\title{ask if go to Package update diary menu}
+\title{ask if go to package update diary menu}
 \usage{
 ask_diary()
 }
 \description{
-ask if go to Package update diary menu
+ask if go to package update diary menu
 }

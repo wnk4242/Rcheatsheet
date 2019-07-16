@@ -1,7 +1,7 @@
 ######Menu selection#######
 #' main menu
 #' @export
-go <- function(){
+mmenu <- function(){
   cat("\014")
   require(crayon)
   cat(bold$red('\n| Main menu\n'))
@@ -9,8 +9,6 @@ go <- function(){
                 "Environment setup\n",
                 "Data wrangling\n",
                 "Lifesaving packages\n",
-                "Statistical analysis\n",
-                "APA formatting\n",
                 "Cheat sheet building\n",
                 "Package update diary\n",
                 "Quit")),
@@ -18,8 +16,6 @@ go <- function(){
          setup(),
          wrangle(),
          lifesaver(),
-         stanalysis(),
-         APA(),
          builder(),
          diary(),
          exit()
@@ -36,10 +32,10 @@ setup <- function(){
                 "read in a data set",
                 "go back to the main menu",
                 "quit")),
-         install(),
-         lib(),
-         read(),
-         go(),
+         cs_install(),
+         cs_library(),
+         cs_read(),
+         mmenu(),
          exit())
 }
 
@@ -52,9 +48,9 @@ wrangle <- function(){
                 "create a data frame",
                 "go back to the main menu",
                 "quit")),
-         naming(),
-         dataframe(),
-         go(),
+         cs_name(),
+         cs_data.frame(),
+         mmenu(),
          exit())
 }
 
@@ -66,52 +62,30 @@ lifesaver<- function(){
   switch(menu(c("dplyr grammar",
                 "go back to the main menu",
                 "quit")),
-         DplyR(),
-         go(),
+         dplyrpkg(),
+         mmenu(),
          exit())}
 
 
 #' dplyr grammar menu
 #' @export
-DplyR <- function(){
+dplyrpkg <- function(){
   cat("\014")
   cat(bold$red('\n| dplyr grammar\n'))
-  switch(menu(c("convert a data frame to tibble: tbl()",
+  switch(menu(c("convert a data frame to tibble: cs_tbl()",
                 "go back to the previous menu",
                 "go back to the main menu",
                 "quit")),
-         tbl(),
+         cs_tbl(),
          lifesaver(),
-         go(),
-         exit())
-}
-
-#'Statistical analysis menu
-#'@export
-stanalysis <- function(){
-  cat('\014')
-  cat(bold$red('\n| Statistical analysis\n'))
-  switch(menu(c("perform multiple regression",
-                "go back to the main menu",
-                "quit")),
-         mulreg(),
-         go(),
+         mmenu(),
          exit())
 }
 
 
-#' APA formatting menu
-#' @export
-APA <- function(){
-  cat("\014")
-  cat(bold$red('\n| APA formatting\n'))
-  switch(menu(c("cite a journal article in APA style",
-                "go back to the main menu",
-                "quit")),
-         APAjournal(),
-         go(),
-         exit())
-}
+
+
+
 
 #' Package update diary menu
 #' @export
@@ -134,7 +108,7 @@ diary <- function(){
          July112019(),
          July132019(),
          July142019(),
-         go(),
+         mmenu(),
          exit())
 }
 
@@ -143,10 +117,42 @@ diary <- function(){
 builder <- function(){
   cat('\014')
   cat(bold$red('\n| Cheat sheet building tools\n'))
-  switch(menu(c("cheat sheet builder", "menu builder", "gadget builder",
+  switch(menu(c("cheat sheet builder", "menu builder", "link builder",
                 "go back to the main menu",
                 "quit")),
-         csbuilder(), menubuilder(), gadgetbuilder(),
-         go(),
+         csbuilder(), menubuilder(), linkbuilder(),
+         mmenu(),
+         exit())
+}
+
+
+
+
+#'Statistical analysis menu
+#'currently not using
+#'@export
+stanalysis <- function(){
+  cat('\014')
+  cat(bold$red('\n| Statistical analysis\n'))
+  switch(menu(c("perform multiple regression",
+                "go back to the main menu",
+                "quit")),
+         mulreg(),
+         mmenu(),
+         exit())
+}
+
+
+#' APA formatting menu
+#'currently not using
+#' @export
+apastyle <- function(){
+  cat("\014")
+  cat(bold$red('\n| APA formatting\n'))
+  switch(menu(c("cite a journal article in APA style",
+                "go back to the main menu",
+                "quit")),
+         cs_apajournal(),
+         mmenu(),
          exit())
 }

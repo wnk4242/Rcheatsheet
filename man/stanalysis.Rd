@@ -2,10 +2,12 @@
 % Please edit documentation in R/menus.R
 \name{stanalysis}
 \alias{stanalysis}
-\title{Statistical analysis menu}
+\title{Statistical analysis menu
+currently not using}
 \usage{
 stanalysis()
 }
 \description{
 Statistical analysis menu
+currently not using
 }

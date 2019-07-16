@@ -1,5 +1,6 @@
 ######Package code Statistical analysis######
 #' Perform multiple regression
+#' currently not using
 mulreg<- function(){
   cat(rep('\n',1))
   cat(bold$blue('\n|perform multiple regression\n\n'))

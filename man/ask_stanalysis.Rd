@@ -2,10 +2,12 @@
 % Please edit documentation in R/gadgets.R
 \name{ask_stanalysis}
 \alias{ask_stanalysis}
-\title{ask if go to Statistical analysis menu}
+\title{ask if go to Statistical analysis menu
+currently not using}
 \usage{
 ask_stanalysis()
 }
 \description{
 ask if go to Statistical analysis menu
+currently not using
 }

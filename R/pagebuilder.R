@@ -30,11 +30,13 @@ menubuilder <- function(){
                    c("\"go back to the main menu\""),",\n\t",
                    c("\"quit\""), ")),\n\t",
                    function.name,",\n\t",
-                   "go(),\n\t",
+                   "mmenu(),\n\t",
                    "exit())",
                    "\n\t}",
                    sep = ""))
   cat(bold$blue('\n\n##################################\n'))
+  cat(rep("\n", 5))
+  ask_builder()
 }
 
 

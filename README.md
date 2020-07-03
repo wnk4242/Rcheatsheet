@@ -4,15 +4,26 @@ How to install and use Rcheatsheet:
 install.packages("devtools")
 install.packages("crayon")
 
+
+
 #Load devtools to install Rcheatsheet from GitHub
 library(devtools)
 install_github("wnk4242/Rcheatsheet")
+
+
+
 
 #Load Rcheatsheet and crayon(crayon is needed to run Rcheatsheet)
 library(crayon)
 library(Rcheatsheet)
 
+
+
+
 #Initiate Rcheasheet with the following code:
 command()
+
+
+
 
 #Enjoy:)

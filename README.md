@@ -20,5 +20,5 @@ library(Rcheatsheet)
 
 
 
-#Go to main menu of Rcheatsheet and have fun:)\
+#Go to the main menu of Rcheatsheet and have fun:)\
 mmenu()
